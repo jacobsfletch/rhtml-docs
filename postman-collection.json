@@ -1,0 +1,62 @@
+{
+	"info": {
+		"_postman_id": "d5c151aa-5c61-4bce-93c2-e45617218edd",
+		"name": "Rasterize HTML",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Generate PDF",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "https://rasterize-html.herokuapp.com/generate-pdf",
+					"protocol": "https",
+					"host": [
+						"rasterize-html",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"generate-pdf"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Generate PNG",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8000/generate-png",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"generate-png"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
