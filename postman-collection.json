@@ -6,27 +6,7 @@
 	},
 	"item": [
 		{
-			"name": "Generate PDF",
-			"request": {
-				"method": "POST",
-				"header": [],
-				"url": {
-					"raw": "https://rasterize-html.herokuapp.com/generate-pdf",
-					"protocol": "https",
-					"host": [
-						"rasterize-html",
-						"herokuapp",
-						"com"
-					],
-					"path": [
-						"generate-pdf"
-					]
-				}
-			},
-			"response": []
-		},
-		{
-			"name": "Generate PNG",
+			"name": "Single HTML String",
 			"request": {
 				"method": "POST",
 				"header": [
@@ -38,22 +18,67 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "",
-					"options": {
-						"raw": {
-							"language": "json"
-						}
-					}
+					"raw": "{\n    \"html\": \"hello, world!\"\n}"
 				},
 				"url": {
-					"raw": "localhost:8000/generate-png",
+					"raw": "http://localhost:8000",
+					"protocol": "http",
 					"host": [
 						"localhost"
 					],
-					"port": "8000",
-					"path": [
-						"generate-png"
-					]
+					"port": "8000"
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "HTML Array",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"html\": [\n        \"Hello, world!\", \n        \"Goodbye, world!\"\n    ]\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8000",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000"
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "HTML Array With Template",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"htmlTemplate\": \"{{greeting}}, world!\",\n    \"html\": [\n        {\n            \"greeting\": \"Hello\"\n        },\n        {\n            \"greeting\": \"Goodbye\"\n        }\n    ]\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8000",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000"
 				}
 			},
 			"response": []
