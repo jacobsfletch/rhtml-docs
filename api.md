@@ -22,14 +22,14 @@ Either `url` _or_ `html` are required, but not both.
 | Property | Type | Description |
 | - | - | - |
 | `totalImages` | `number` | total number of images generated |
-| `images` | `array` | images generated, in same order as received, see [Documents](#documents) for shape |
-| `pdf` | `object` | if `pdf` is `true`, see [Documents](#documents for shape |
+| `images` | `array` | images generated, in same order as received, see [Document](#document) for shape |
+| `pdf` | `object` | if `pdf` is `true`, see [Document](#document) for shape |
 
-#### Nested Documents
+#### Document
 
 | Property | Type | Description |
 | - | - | - |
-| `type` | `'image/png'` &#124;&#124; `'image/jpeg'` &#124;&#124; `'application/pdf'` | [MIME Type](https://developer.mozilla.org/en-US/docs/Web/HTTP/Basics_of_HTTP/MIME_types) |
+| `mimeType` | `'image/png'` &#124;&#124; `'image/jpeg'` &#124;&#124; `'application/pdf'` | [MIME Type](https://developer.mozilla.org/en-US/docs/Web/HTTP/Basics_of_HTTP/MIME_types) |
 | `size` | `number` | in bytes |
 | `totalPages` | `number` | if `type` is `application/pdf` |
 | `document` | `buffer` | See [Parsing The Response](./guides/parsing-the-response.md) for how to work with buffers |
@@ -40,7 +40,7 @@ Either `url` _or_ `html` are required, but not both.
 {
   "totalImages": 1,
   "images": [{
-    "type": "image/png",
+    "mimeType": "image/png",
     "size": 871,
     "document": {
       "type": "Buffer",
@@ -48,7 +48,7 @@ Either `url` _or_ `html` are required, but not both.
     }
   }],
   "pdf": {
-    "type": "application/pdf",
+    "mimeType": "application/pdf",
     "size": 1003,
     "totalPages": 1,
     "document": {

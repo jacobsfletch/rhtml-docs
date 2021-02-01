@@ -8,9 +8,7 @@ Rasterize HTML does not host your image. Once our servers respond with your `doc
 
 ## ArrayBuffer To Base64
 
-The `ArrayBuffer` can be decoded to `Base64`, a format probably most familiar to you.
-
-This can be done with a simple function ([credit to this post](https://stackoverflow.com/questions/9267899/arraybuffer-to-base64-encoded-string)):
+The `ArrayBuffer` can be decoded to `Base64`, a format probably most familiar to you. Fortunately this can be done with a basic function ([credit to this post](https://stackoverflow.com/questions/9267899/arraybuffer-to-base64-encoded-string)):
 
 ```javascript
 const arrayBufferToBase64 = (arrayBuffer) => {
@@ -20,5 +18,15 @@ const arrayBufferToBase64 = (arrayBuffer) => {
   return window.btoa(binary);
 }
 
-const base64Image = arrayBufferToBase64(document)
+const base64 = arrayBufferToBase64(document);
 ```
+
+#### Data URL
+
+Many times you'll want to use your `Base64` data as a [Data URL](https://developer.mozilla.org/en-US/docs/Web/HTTP/Basics_of_HTTP/Data_URIs):
+
+```javascript
+const dataURL = `data:${MIME_TYPE};base64,${base64}`;
+```
+
+Just replace `MIME_TYPE` with the [`mimeType`](../api.md#document) of your document.
