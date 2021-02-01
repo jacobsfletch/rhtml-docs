@@ -12,10 +12,21 @@ Either `url` _or_ `html` are required, but not both.
 | `htmlTemplate` | `string` | `undefined` | HTML string, [details here](./guides/using-html-templates.md) |
 | `type` | `'jpg'` &#124;&#124; `'png'` | `png` |  |
 | `pdf` | `boolean` | `undefined` | injects your images into a PDF document, [details here](./guides/creating-pdf.md) |
+| `pdfOptions` | `object` | `undefined` | only if `pdf` is `true`, see [PDF Options](#pdf-options) for shape |
 | `transparent` | `boolean` | `true` | only if `type` is `png` |
 | `quality` | `number` | `1` | between 0 and 1 |
 | `beforeScreenshot` | `function` | `undefined` | a hook that returns the [Page](https://pptr.dev/#?product=Puppeteer&version=v5.5.0&show=api-class-page) before continuing |
 | `screenshotOptions` | `object` | `undefined` | additional options to send through Puppeteer's [screenshot([options])](https://pptr.dev/#?product=Puppeteer&version=v5.5.0&show=api-pagescreenshotoptions) |
+
+#### PDF Options
+
+Only applies if `pdf` is `true`.
+
+| Key | Type | Default | Description |
+| - | - | - | - |
+| `orientation` | `'portrait'` &#124;&#124; `'landscape'` | `portrait` | |
+| `width` | `number`  | `undefined` | in PDF points (72 per inch), overrides `size` |
+| `height` | `number`  | `undefined` | in PDF points (72 per inch), overrides `size` |
 
 ## Response
 
@@ -32,7 +43,7 @@ Either `url` _or_ `html` are required, but not both.
 | `mimeType` | `'image/png'` &#124;&#124; `'image/jpeg'` &#124;&#124; `'application/pdf'` | [MIME Type](https://developer.mozilla.org/en-US/docs/Web/HTTP/Basics_of_HTTP/MIME_types) |
 | `size` | `number` | in bytes |
 | `totalPages` | `number` | if `type` is `application/pdf` |
-| `document` | `buffer` | See [Parsing The Response](./guides/parsing-the-response.md) for how to work with buffers |
+| `document` | `buffer` | see [Parsing The Response](./guides/parsing-the-response.md) for how to work with buffers |
 
 #### `200 OK`
 
