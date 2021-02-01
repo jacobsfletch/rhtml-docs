@@ -14,6 +14,7 @@ This is the source code for our [documentation website](https://rhtml.io/docs).
   - [Capturing URL](./guides/capturing-url.md)
   - [Capturing HTML](./guides/capturing-html.md)
   - [Using HTML Templates](./guides/using-html-templates.md)
+  - [Creating A PDF](./guides/creating-pdf.md)
   - [Parsing The Response](./guides/parsing-the-response.md)
 - Resources
   - [FAQs](./faq.md)

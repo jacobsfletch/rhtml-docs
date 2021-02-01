@@ -1,12 +1,11 @@
 # Using HTML Templates
 
-This guide will walk you through the process of capturing screenshot(s) with dynamic content.
-
 Rasterize HTML uses [Handlebars](https://handlebarsjs.com/), a minimal templating language. If you're already familiar with it, this should feel intuitive to you.
 
 ## Dynamic Content
 
 The concept is very simple and be thought of in two parts:
+
   1. Define a template, with [expressions](https://handlebarsjs.com/guide/#simple-expressions) that identify each piece of replaceable content
   2. Send it content, an array of objects whose keys are mapped to each expression defined in the template
 

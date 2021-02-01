@@ -42,15 +42,6 @@ $ curl \
 
 Read [Capturing HTML](./guides/capturing-html.md) for more.
 
-### Additional Parameters
+## Additional Parameters
 
 You can continue to customize your image with additional parameters, see the [API](./api.md) for everything possible.
-
-## Resources
-
-#### FAQs
-
-Still having issues? See our most [frequently asked questions](./faq.md).
-#### Postman
-
-Use [Postman](https://www.postman.com/)? Here's a [boilerplate collection](./postman-collection.json) for you.

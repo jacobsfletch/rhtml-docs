@@ -11,7 +11,7 @@ Either `url` _or_ `html` are required, but not both.
 | `html`<span style="color:red">*</span> | `array` &#124;&#124; `object` | `undefined` | array of HTML strings, or an object if using `htmlTemplate`, [details here](./guides/using-html-templates.md)|
 | `htmlTemplate` | `string` | `undefined` | HTML string, [details here](./guides/using-html-templates.md) |
 | `type` | `'jpg'` &#124;&#124; `'png'` | `png` |  |
-| `pdf` | `boolean` | `undefined` | injects your images into a PDF document |
+| `pdf` | `boolean` | `undefined` | injects your images into a PDF document, [details here](./guides/creating-pdf.md) |
 | `transparent` | `boolean` | `true` | only if `type` is `png` |
 | `quality` | `number` | `1` | between 0 and 1 |
 | `beforeScreenshot` | `function` | `undefined` | a hook that returns the [Page](https://pptr.dev/#?product=Puppeteer&version=v5.5.0&show=api-class-page) before continuing |

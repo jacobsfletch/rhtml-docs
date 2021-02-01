@@ -72,7 +72,7 @@ const getAllCSS = () => {
 const allCSS = getAllCSS();
 ```
 
-To further optimize the request, consider [Using HTML Templates](./guides/using-html-templates.md) to share a stylesheet across all of your images.
+To further optimize the request, consider [Using HTML Templates](./guides/using-html-templates.md) to share stylesheet(s) or markup across all of your images.
 
 ## Additional Parameters
 
