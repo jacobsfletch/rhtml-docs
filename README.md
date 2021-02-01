@@ -16,11 +16,12 @@ This is the source code for our [documentation website](https://rhtml.io/docs).
   - [Using HTML Templates](./guides/using-html-templates.md)
   - [Parsing The Response](./guides/parsing-the-response.md)
 - Resources
+  - [FAQs](./faq.md)
   - [Boilerplate Postman Collection](./postman-collection.json)
 
 ### Contribute
 
-Found an error or have a suggestion? [Open an issue]() or [make a pull request]().
+Found an error or have a suggestion? [Open an issue](https://github.com/rhtml/docs/issues) or [make a pull request](https://github.com/rhtml/docs/pulls).
 
 ## License
 

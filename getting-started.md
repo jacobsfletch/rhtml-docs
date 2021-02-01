@@ -3,6 +3,7 @@
 If you have not yet retrieved your [API key](./authentication.md), do that first and then come back here.
 
 There are two distinct ways to use this API:
+
   1. Screenshot entire webpages, or parts of them, that exist on live domains. Read [Capturing By URL](./guides/capturing-url.md) for a detailed walk-through.
   2. Screenshot arbitrary HTML that you pass in, in bulk or with dynamic content. Read [Capturing HTML](./guides/capturing-html.md) or [Using HTML Templates](./guides/using-html-templates.md) for detailed walk-throughs.
 
@@ -47,6 +48,9 @@ You can continue to customize your image with additional parameters, see the [AP
 
 ## Resources
 
+#### FAQs
+
+Still having issues? See our most [frequently asked questions](./faq.md).
 #### Postman
 
 Use [Postman](https://www.postman.com/)? Here's a [boilerplate collection](./postman-collection.json) for you.
