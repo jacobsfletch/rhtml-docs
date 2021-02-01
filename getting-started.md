@@ -6,7 +6,7 @@ There are two distinct ways to use this API:
   1. Screenshot entire webpages, or parts of them, that exist on live domains. Read [Capturing By URL](./guides/capturing-url.md) for a detailed walk-through.
   2. Screenshot arbitrary HTML that you pass in, in bulk or with dynamic content. Read [Capturing HTML](./guides/capturing-html.md) or [Using HTML Templates](./guides/using-html-templates.md) for detailed walk-throughs.
 
-All screenshots are returned as an [ArrayBuffer](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/ArrayBuffer) for you to parse and work with freely. Read [Parsing Response](./guides/parsing-the-response.md) for details, or see the [full response](./api.md#response).
+All screenshots are returned as an [ArrayBuffer](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/ArrayBuffer) for you to parse and work with freely. Read [Parsing Response](./guides/parsing-the-response.md) for details, or see the [Full Response](./api.md#response).
 
 ## Quick Start
 
@@ -42,7 +42,7 @@ Read [Capturing HTML](./guides/capturing-html.md) for more.
 
 ### Additional Parameters
 
-You can continue to customize your image with additional parameters, see the [API](./api.md) for a list of everything possible.
+You can continue to customize your image with additional parameters, see the [API](./api.md) for everything possible.
 
 ## Resources
 

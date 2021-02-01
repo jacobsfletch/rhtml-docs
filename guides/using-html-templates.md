@@ -1,42 +1,55 @@
-# Capturing In Bulk
+# Using HTML Templates
 
-### Why bulk?
+This guide will walk you through the process of capturing screenshot(s) with dynamic content.
 
-- Consolidate number of requests
-- Reduce individual request size
-- Inject dynamic content
+Rasterize HTML uses [Handlebars](https://handlebarsjs.com/), a minimal templating language. If you're already familiar with it, this should feel intuitive to you.
 
-### Simple Array
+## Dynamic Content
 
-The easiest way to generate images in bulk is to pass an array of strings to the `html` param. Each item in the array will be rendered individually and returned in the same order they came.
+The concept is very simple and be thought of in two parts:
+  1. Define a template, with [expressions](https://handlebarsjs.com/guide/#simple-expressions) that identify each piece of replaceable content
+  2. Send it content, an array of objects whose keys are mapped to each expression defined in the template
+
+### Template
+
+To create a template, pass a string of HTML to the `htmlTemplate` param.
+
+To identify replaceable content, use double-curly-braces `{{likeThis}}`, or with dot-notation `{{like.this}}`.
 
 ```json
 {
-  "html": [
-    "<p>image 1</p>",
-    "<p>image 2</p>"
-  ]
+  "htmlTemplate": "<div>Hello, {{name}}! Welcome to {{planet.name}}.</div>",
 }
 ```
+### Content
 
-### HTML Templating
+Then, pass an array of objects to the `html` param.
 
-To generate images with dynamic content, add the `htmlTemplate` param.
-
-Rasterize HTML uses [Handlebars](https://handlebarsjs.com/) templating. Pass an array of objects to the `html` param. Each key of these objects will be mapped to variable names made available in the `htmlTemplate`.
-
-Just use double-curly-braces `{{likeThis}}`. Or dot-notation `{{like.this}}` for deeply nested objects.
+Each key will is mapped to the expressions defined in `htmlTemplate`.
 
 ```json
 {
-  "htmlTemplate": "<div>Planet {{name}}</div>",
   "html": [
     {
-      "name": "Mars"
+      "name": "Jane",
+      "planet": {
+        "name": "Earth"
+      }
     },
     {
-      "name": "<b>Earth</b>",
+      "name": "John",
+      "planet": {
+        "name": "Mars"
+      }
     }
-  ]
+  ],
 }
 ```
+
+## Additional Parameters
+
+You can continue to customize your image(s) with additional parameters, see the [API](./api.md) for a list of everything possible.
+
+## Response
+
+Here's the [Full Response](./api.md#response) that will be returned to you. Read [Parsing Response](./guides/parsing-the-response.md) for how to process it.
