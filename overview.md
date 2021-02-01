@@ -16,7 +16,7 @@ Rasterize HTML is a REST API that accepts a URL or HTML and returns an image. It
 - Generates accurate, true-to-browser renderings using Headless Chrome
 - Render as PNG or JPG, or optionally inject into a multi-page PDF
 - Control width, height, quality, padding, etc
-- Screenshot raw HTML and CSS, one-off or in bulk using a template
+- Screenshot HTML and CSS, one-off or in bulk using a template
 - Screenshot entire webpages by URL, or optionally pass a DOM selector to capture only part
 
 ### API Key
