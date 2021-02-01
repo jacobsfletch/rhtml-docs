@@ -15,11 +15,12 @@ All images are returned as an [ArrayBuffer](https://developer.mozilla.org/en-US/
 Send a `POST` request with the `url` parameter to `https://rhtml.io`.
 
 ```bash
-$ curl https://rhtml.io \
+$ curl \
   -u USERNAME:API_KEY  \
   -h "Content-Type:application/json" \
-  -x POST \
   -d '{"url": "https://google.com"}'
+  -x POST \
+  https://rhtml.io
 ```
 
 Or capture just part of the page by passing the `selector` param.
