@@ -29,6 +29,7 @@ Each key will is mapped to the expressions defined in `htmlTemplate`.
 
 ```json
 {
+  "htmlTemplate": "<div>Hello, {{name}}! Welcome to {{planet.name}}.</div>",
   "html": [
     {
       "name": "Jane",
@@ -52,4 +53,4 @@ You can continue to customize your image(s) with additional parameters, see the 
 
 ## Response
 
-Here's the [Full Response](./api.md#response) that will be returned to you. Read [Parsing Response](./guides/parsing-the-response.md) for how to process it.
+Here's the [Full Response](./api.md#response) that will be returned to you. Read [Parsing The Response](./guides/parsing-the-response.md) for how to process it.

@@ -1,6 +1,6 @@
 # API
 
-### Params
+## Params
 
 Either `url` _or_ `html` are required, but not both.
 
@@ -17,13 +17,22 @@ Either `url` _or_ `html` are required, but not both.
 | `beforeScreenshot` | `function` | `undefined` | a hook that returns the [Page](https://pptr.dev/#?product=Puppeteer&version=v5.5.0&show=api-class-page) before continuing |
 | `screenshotOptions` | `object` | `undefined` | additional options to send through Puppeteer's [screenshot([options])](https://pptr.dev/#?product=Puppeteer&version=v5.5.0&show=api-pagescreenshotoptions) |
 
-### Response
+## Response
 
 | Property | Type | Description |
 | - | - | - |
 | `totalImages` | `number` | total number of images generated |
-| `images` | `array` | images generated, in same order as received |
-| `pdf` | `object` | only if the `pdf` param was passed in |
+| `images` | `array` | images generated, in same order as received, see [Documents](#documents) for shape |
+| `pdf` | `object` | if `pdf` is `true`, see [Documents](#documents for shape |
+
+#### Nested Documents
+
+| Property | Type | Description |
+| - | - | - |
+| `type` | `'image/png'` &#124;&#124; `'image/jpeg'` &#124;&#124; `'application/pdf'` | [MIME Type](https://developer.mozilla.org/en-US/docs/Web/HTTP/Basics_of_HTTP/MIME_types) |
+| `size` | `number` | in bytes |
+| `totalPages` | `number` | if `type` is `application/pdf` |
+| `document` | `buffer` | See [Parsing The Response](./guides/parsing-the-response.md) for how to work with buffers |
 
 #### `200 OK`
 
@@ -49,8 +58,6 @@ Either `url` _or_ `html` are required, but not both.
   },
 }
 ```
-
-Read the [Parsing The Response](./guides/parsing-the-response.md) guide for how to process the document.
 
 #### `500 Error`
 
