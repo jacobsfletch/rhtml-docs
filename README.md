@@ -24,6 +24,8 @@ This is the source code for our [documentation website](https://rhtml.io/docs).
 
 Found an error or have a suggestion? [Open an issue](https://github.com/rhtml/docs/issues) or [make a pull request](https://github.com/rhtml/docs/pulls).
 
+If you'd like to contribute, [start here](CONTRIBUTING.md).
+
 ## License
 
 [MIT](https://github.com/rhtml/docs/blob/master/LICENSE) Copyright (c) Jacob Fletcher
