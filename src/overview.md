@@ -25,7 +25,7 @@ Use of this API requires an API key. They are free, and you can get on [here]().
 
 ## Getting Started
 
-If you already have an API key, [Get Started](./guides/getting-started.md)!
+If you already have an API key, [Get Started](./getting-started.md)!
 
 ## Who's using Rasterize HTML
 
