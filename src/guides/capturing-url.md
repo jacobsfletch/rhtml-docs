@@ -25,8 +25,8 @@ To capture only part of the page, pass any valid [CSS Selector](https://develope
 
 ## Additional Parameters
 
-You can continue to customize your image(s) with additional parameters, see the [API](./api.md) for a list of everything possible.
+You can continue to customize your image(s) with additional parameters, see the [API](../api.md) for a list of everything possible.
 
 ## Response
 
-Here's the [Full Response](./api.md#response) that will be returned to you. Read [Parsing The Response](./guides/parsing-the-response.md) for how to process it.
+Here's the [Full Response](../api.md#response) that will be returned to you. Read [Parsing The Response](./parsing-the-response.md) for how to process it.

@@ -54,8 +54,8 @@ Individual pages can be controlled just the same with the `pages` array. You can
 ```
 ## Additional Parameters
 
-You can continue to customize your PDF with additional parameters, see the [API](./api.md) for a list of everything possible.
+You can continue to customize your PDF with additional parameters, see the [API](../api.md) for a list of everything possible.
 
 ## Response
 
-Here's the [Full Response](./api.md#response) that will be returned to you. Read [Parsing The Response](./guides/parsing-the-response.md) for how to process it.
+Here's the [Full Response](../api.md#response) that will be returned to you. Read [Parsing The Response](./parsing-the-response.md) for how to process it.

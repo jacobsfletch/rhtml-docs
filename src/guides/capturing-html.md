@@ -72,12 +72,12 @@ const getAllCSS = () => {
 const allCSS = getAllCSS();
 ```
 
-To further optimize the request, consider [Using HTML Templates](./guides/using-html-templates.md) to share stylesheet(s) or markup across all of your images.
+To further optimize the request, consider [Using HTML Templates](./using-html-templates.md) to share stylesheet(s) or markup across all of your images.
 
 ## Additional Parameters
 
-You can continue to customize your image(s) with additional parameters, see the [API](./api.md) for a list of everything possible.
+You can continue to customize your image(s) with additional parameters, see the [API](../api.md) for a list of everything possible.
 
 ## Response
 
-Here's the [Full Response](./api.md#response) that will be returned to you. Read [Parsing The Response](./guides/parsing-the-response.md) for how to process it.
+Here's the [Full Response](../api.md#response) that will be returned to you. Read [Parsing The Response](./parsing-the-response.md) for how to process it.
