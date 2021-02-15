@@ -6,19 +6,18 @@ This is the source code for our [documentation website](https://rhtml.io/docs).
 
 ### Table Of Contents
 
-- [Overview](./overview.md)
-- [Authentication](./authentication.md)
-- [Getting Started](./getting-started.md)
-- [API](./api.md)
+- [Overview](./src/overview.md)
+- [Authentication](./src/authentication.md)
+- [Getting Started](./src/getting-started.md)
+- [API](./src/api.md)
 - Guides
-  - [Capturing URL](./guides/capturing-url.md)
-  - [Capturing HTML](./guides/capturing-html.md)
-  - [Using HTML Templates](./guides/using-html-templates.md)
-  - [Creating A PDF](./guides/creating-pdf.md)
-  - [Parsing The Response](./guides/parsing-the-response.md)
-- Resources
-  - [FAQs](./faq.md)
-  - [Boilerplate Postman Collection](./postman-collection.json)
+  - [Capturing URL](./src/guides/capturing-url.md)
+  - [Capturing HTML](./src/guides/capturing-html.md)
+  - [Using HTML Templates](./src/guides/using-html-templates.md)
+  - [Creating A PDF](./src/guides/creating-pdf.md)
+  - [Parsing The Response](./src/guides/parsing-the-response.md)
+- [FAQs](./src/faq.md)
+- [Postman](./postman.json)
 
 ### Contribute
 

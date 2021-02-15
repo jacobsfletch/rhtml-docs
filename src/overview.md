@@ -21,7 +21,7 @@ Rasterize HTML is a REST API that accepts a URL or HTML and returns an image. It
 
 ## API Key
 
-Use of this API requires an API key. They are free, and you can get on [here](). Or read the [Authentication](./guides/authentication.md) guide.
+Use of this API requires an API key. They are free, and you can get on [here](). Or read the [Authentication](./authentication.md) guide.
 
 ## Getting Started
 

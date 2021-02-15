@@ -1,0 +1,51 @@
+[
+  {
+    "label": "Overview",
+    "path": "/docs/overview"
+  },
+  {
+    "label": "Authentication",
+    "path": "/docs/authentication"
+  },
+  {
+    "label": "Getting Started",
+    "path": "/docs/getting-started"
+  },
+  {
+    "label": "API",
+    "path": "/docs/api"
+  },
+  {
+    "label": "Guides",
+    "list": [
+      {
+        "label": "Capturing URL",
+        "path": "/docs/guides/capturing-url"
+      },
+      {
+        "label": "Capturing HTML",
+        "path": "/docs/guides/capturing-html"
+      },
+      {
+        "label": "Using HTML Templates",
+        "path": "/docs/guides/using-html-templates"
+      },
+      {
+        "label": "Creating A PDF",
+        "path": "/docs/guides/creating-pdf"
+      },
+      {
+        "label": "Parsing The Response",
+        "path": "/docs/guides/parsing-the-response"
+      }
+    ]
+  },
+  {
+    "label": "FAQ",
+    "path": "/docs/faq"
+  },
+  {
+    "label": "Postman",
+    "path": "https://github.com/rhtml/docs/tree/master/postman.json"
+  }
+]

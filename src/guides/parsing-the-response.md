@@ -1,6 +1,6 @@
 # Parsing The Response
 
-If you are not yet familiar with the [Full Response](./api.md#response), do that first and then come back here.
+If you are not yet familiar with the [Full Response](../api.md#response), do that first and then come back here.
 
 Each `document` of the response is an [ArrayBuffer](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/ArrayBuffer) which needs to be parsed into something more readily useable.
 
