@@ -43,9 +43,5 @@
   {
     "label": "FAQ",
     "path": "/docs/faq"
-  },
-  {
-    "label": "Postman",
-    "path": "https://github.com/rhtml/docs/tree/master/postman.json"
   }
 ]

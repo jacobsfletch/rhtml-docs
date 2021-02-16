@@ -79,3 +79,7 @@ Only applies if `pdf` is `true`.
   }]
 }
 ```
+
+## Postman
+
+If you use Postman, here's a [boilerplate Postman collection](https://github.com/rhtml/docs/tree/master/postman.json) to get you started developing locally.
